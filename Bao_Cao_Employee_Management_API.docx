@@ -1,0 +1,71 @@
+BÁO CÁO SAU BUỔI THỰC HÀNH
+Môn học: Java Web (Spring Boot – RESTful API)
+Tên buổi thực hành: Mini Project – Employee Management API (Hệ thống Quản lý Nhân viên)
+Thời gian thực hành: 180 phút
+Họ và tên sinh viên: Nguyễn Trường An
+Lớp: HN_KS24_CNTT3
+Nhóm: G1
+
+I. NỘI DUNG ĐÃ THỰC HÀNH
+• Phân tích tài liệu SRS của hệ thống Employee Management API.
+• Xác định đối tượng dữ liệu chính: Employee.
+• Thiết kế cấu trúc dữ liệu và các API theo mô hình RESTful.
+• Xây dựng ứng dụng web service bằng Spring Boot và Spring Data JPA với H2 In-Memory Database.
+• Xây dựng đầy đủ các endpoint CRUD cho nhân viên.
+• Áp dụng Validation dữ liệu đầu vào.
+• Tích hợp Spring AOP cho Logging (@Before, @AfterReturning, @Around).
+• Sử dụng SLF4J để ghi log theo các mức INFO, WARN, ERROR.
+• Viết Unit Test cho Service và Controller.
+• Kiểm thử API bằng Postman và xác nhận dữ liệu trả về đúng chuẩn JSON.
+
+II. CÔNG VIỆC CÁC EM ĐÃ LÀM
+1. Công việc cá nhân
+• Xây dựng EmployeeController với các annotation: @GetMapping, @PostMapping, @PutMapping, @DeleteMapping.
+• Tạo lớp EmployeeService để xử lý logic nghiệp vụ và validation.
+• Xây dựng EmployeeRepository kế thừa JpaRepository.
+• Thực hiện các chức năng: lấy danh sách nhân viên, lấy chi tiết theo ID, thêm nhân viên mới, cập nhật thông tin, xóa nhân viên.
+• Tích hợp AOP Logging và SLF4J.
+• Viết Unit Test cho Service (5 test cases) và Controller (4 test cases).
+• Kiểm thử API bằng Postman, xác nhận các mã trạng thái HTTP (200, 201, 204, 400, 404).
+
+2. Công việc nhóm
+• Phân tích yêu cầu từ tài liệu SRS và xác định các API chính.
+• Thảo luận về cấu trúc Entity Employee và các ràng buộc validate.
+• Phân chia nhiệm vụ: backend, AOP & Logging, Unit Test, tài liệu báo cáo.
+• Kiểm tra tính đúng đắn của các endpoint và response body.
+• Hỗ trợ nhau xử lý validation và exception handling.
+• Chuẩn bị nội dung báo cáo và demo API.
+
+III. KẾT QUẢ ĐẠT ĐƯỢC
+• Hoàn thiện hệ thống Employee Management API theo mô hình RESTful.
+• Các chức năng CRUD hoạt động đúng theo yêu cầu SRS.
+• Validation dữ liệu đầu vào được thực thi tốt (fullName, department, salary).
+• Tích hợp thành công Spring AOP và SLF4J Logging.
+• Viết và chạy thành công các Unit Test cho Service và Controller.
+• Dữ liệu được lưu trữ và truy xuất chính xác từ H2 In-Memory Database.
+• Hiểu rõ hơn về kiến trúc 3 tầng, AOP, Logging và Unit Testing trong Spring Boot.
+
+IV. KHÓ KHĂN VÀ VẤN ĐỀ GẶP PHẢI
+• Khó khăn trong việc cấu hình và sử dụng AOP (đặc biệt là @Around advice).
+• Nhầm lẫn khi xử lý exception và trả về HTTP status code phù hợp.
+• Debug lỗi validation khi sử dụng @Valid và BindingResult.
+• Chưa quen với việc viết Unit Test sử dụng Mockito và @WebMvcTest.
+• Xử lý logging với SLF4J ở các mức độ khác nhau.
+
+V. KINH NGHIỆM RÚT RA
+• Cần hiểu rõ quy trình hoạt động của RESTful API và các HTTP method phù hợp.
+• Nên tách biệt rõ ràng các tầng Controller – Service – Repository.
+• Validation và Exception Handling là rất quan trọng để API chuyên nghiệp.
+• AOP giúp tách biệt logging khỏi business logic, làm code sạch hơn.
+• Viết Unit Test sớm giúp phát hiện lỗi nhanh chóng và tăng độ tin cậy của code.
+• Phải kiểm tra kỹ response body và status code theo đúng đặc tả SRS.
+
+VI. ĐỀ XUẤT / KIẾN NGHỊ
+• Nên có thêm thời gian thực hành về Spring AOP và Unit Testing với Mockito.
+• Cung cấp thêm bài tập về Validation và Global Exception Handler (@ControllerAdvice).
+• Hướng dẫn chi tiết hơn về API documentation bằng Swagger/OpenAPI.
+• Bổ sung phần Authentication/Authorization (JWT) để tăng tính thực tế cho project.
+• Tăng thời lượng cho Mini Project để sinh viên có thể triển khai thêm tính năng nâng cao.
+
+VII. KẾT LUẬN
+Buổi thực hành đã giúp em hiểu rõ cách xây dựng một hệ thống RESTful API hoàn chỉnh bằng Spring Boot. Thông qua dự án Employee Management API, em đã nắm được cách thiết kế Entity, xây dựng Controller, Service, Repository, tích hợp AOP Logging, SLF4J, Validation và Unit Testing. Đây là nền tảng quan trọng để phát triển các hệ thống web service chuyên nghiệp hơn trong tương lai.
